@@ -11,6 +11,8 @@ let socketsConnected = new Set()
 
 io.on('connection', onConneted)
 
+
+
 function onConneted(socket) {
     // console.log(socket.id)
     socketsConnected.add(socket.id)
